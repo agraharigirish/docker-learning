@@ -13,8 +13,9 @@ public class DockerApplication {
 
 	@GetMapping("/message")
 	public String message(){
-		return "Testing Docker.....";
+		return "Testing Docker for Dockerize the Spring Boot Application.....";
 	}
+
 
 	public static void main(String[] args) {
 
