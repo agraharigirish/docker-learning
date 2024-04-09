@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 @RestController
-@RequestMapping("/docker/v1")
+@RequestMapping("/docker")
 public class DockerApplication {
 
 	@GetMapping("/message")
@@ -17,7 +17,9 @@ public class DockerApplication {
 	}
 
 	public static void main(String[] args) {
+
 		SpringApplication.run(DockerApplication.class, args);
+		System.out.println("Project Started .....");
 	}
 
 }
